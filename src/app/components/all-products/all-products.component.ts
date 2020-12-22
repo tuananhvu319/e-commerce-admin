@@ -16,6 +16,8 @@ export class AllProductsComponent implements OnInit, OnDestroy {
   success = false;
   errorMessage: any;
 
+  
+
   constructor(private productService: ProductService) {
   }
 
