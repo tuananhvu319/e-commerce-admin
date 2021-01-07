@@ -10,6 +10,9 @@ import { MainContentComponent } from './components/main-content/main-content.com
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HttpClientModule } from '@angular/common/http';
 import {RouterModule} from '@angular/router';
+import { AllUsersComponent } from './components/all-users/all-users.component';
+import { CreateUserComponent } from './components/create-user/create-user.component';
+import { CreateProductComponent } from './components/create-product/create-product.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import {RouterModule} from '@angular/router';
     FooterComponent,
     HeaderComponent,
     MainContentComponent,
-    SidebarComponent
+    SidebarComponent,
+    AllUsersComponent,
+    CreateUserComponent,
+    CreateProductComponent
   ],
   imports: [
     BrowserModule,

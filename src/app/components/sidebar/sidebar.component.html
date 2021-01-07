@@ -26,22 +26,19 @@
                with font-awesome or any other icon font library -->
 
                 <li class="nav-item has-treeview">
-                    <a class="nav-link" href="#">
-                        <i class="nav-icon fas fa-tag"></i>
-                        <p>
-                            &nbsp;Products
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
+                    <a class="nav-link" routerLink="/products/all-products">
+                        <i class="fas fa-tags nav-icon"></i>
+                        <p>All Products</p>
                     </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a class="nav-link" routerLink="/products/all-products">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>All Products</p>
-                            </a>
-                        </li>
-                    </ul>
                 </li>
+
+                <li class="nav-item has-treeview">
+                    <a class="nav-link" routerLink="/users">
+                        <i class="far fa-user nav-icon"></i>
+                        <p>All Users</p>
+                    </a>
+                </li>
+
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

@@ -1,7 +1,9 @@
 <div class="container my-5">
+    
     <div class="row my-2">
-        <button class="btn btn-sm btn-primary" routerLink="/products/create">Create</button>
+        <button class="btn btn-sm btn-primary" routerLink="/users/create">Create</button>
     </div>
+
     <div class="row">
         <div class="col-12">
             <div class="alert alert-danger" [hidden]="!hasError">
@@ -11,30 +13,30 @@
                 {{ errorMessage }}
             </div>
         </div>
-
         <div class="col">
             <table class="table table-bordered">
                 <thead class="bg-dark text-light">
                     <tr>
                         <th>Id</th>
-                        <th width="20%">Name</th>
-                        <th width="40%">Description</th>
-                        <th>Price</th>
-                        <th>Category</th>
+                        <th width="20%">First name</th>
+                        <th width="30%">Last name</th>
+                        <th>Email</th>
+                        <th>Age</th>
                         <th>Operation</th>
                     </tr>
                 </thead>
 
                 <tbody>
-                    <tr *ngFor="let p of products">
+                    <tr *ngFor="let p of users">
                         <td>{{ p.id }}</td>
-                        <td>{{ p.name }}</td>
-                        <td>{{ p.description }}</td>
-                        <td>{{ p.price | currency:'INR' }}</td>
-                        <td>{{ p.category }}</td>
+                        <td>{{ p.fname }}</td>
+                        <td>{{ p.lname }}</td>
+                        <td>{{ p.email }}</td>
+                        <td>{{ p.age }}</td>
                         <td>
                             <button class="btn btn-sm btn-primary mr-2" (click)="deleteProduct(p.id)">Edit</button>
-                            <button class="btn btn-sm btn-danger mr-2" (click)="deleteProduct(p.id)">Delete</button>
+
+                            <button class="btn btn-sm btn-danger mr-2" (click)="deleteProduct(p.id)">Hide</button>
                         </td>
                     </tr>
                 </tbody>
